@@ -4,7 +4,8 @@ import "testing"
 
 func TestSayHello(t *testing.T) {
 	greeting := SayHello()
-	if greeting != "hello" {
+	// this should fail
+	if greeting == "hello" {
 		t.Fatal("Expected greeting to be hello")
 	}
 }
